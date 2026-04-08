@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a defect in the docs template, repository automation, or usage guidance.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Describe the bug clearly and concisely.
+      placeholder: The template section for installation is unclear when used in a polyglot repo.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps that reproduce the issue.
+      placeholder: |
+        1. Copy n.md into a project
+        2. Fill out the Getting Started section
+        3. Notice the command examples do not fit the use case
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: The template should provide a clearer pattern for multiple runtimes.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: The current structure forces repeated manual editing.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Template version
+      placeholder: 0.1.0
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Include screenshots, repository type, language mix, or any other relevant details.

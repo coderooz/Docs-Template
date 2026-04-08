@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an improvement to the docs template or repository automation.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the gap or limitation you are hitting.
+      placeholder: The template needs a stronger section for service ownership and runbooks.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change you want to see.
+      placeholder: Add an operations section with on-call contacts, alerts, and rollback steps.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: List any workarounds or other approaches you considered.
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Template content
+        - README guidance
+        - GitHub automation
+        - Release process
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add examples, links, or project scenarios that support the request.

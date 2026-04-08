@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace with your actual sitemap URL before publishing.
+Sitemap: https://example.com/docs/sitemap.xml

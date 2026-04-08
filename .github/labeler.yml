@@ -1,0 +1,14 @@
+documentation:
+  - "*.md"
+  - "**/*.md"
+
+template:
+  - "n.md"
+  - "README.md"
+  - "CHANGELOG.md"
+
+github:
+  - ".github/**"
+
+automation:
+  - ".github/workflows/**"

@@ -1,0 +1,30 @@
+name: Welcome
+
+on:
+  issues:
+    types:
+      - opened
+  pull_request_target:
+    types:
+      - opened
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet first-time contributors
+        uses: actions/first-interaction@v2
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Thanks for opening your first issue.
+
+            If this is a template improvement request, please include the project type, language stack, and the section that needs work.
+          pr-message: |
+            Thanks for opening your first pull request.
+
+            Please make sure the template still reads well for multi-project and multi-language use cases.

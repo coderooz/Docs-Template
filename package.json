@@ -2,11 +2,19 @@
   "name": "coderooz-docs-template",
   "version": "1.0.0",
   "description": "A documentation starter for projects that need clean, reusable docs without rebuilding the structure every time.",
+  "type": "module",
+  "main": "docs/index.html",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx serve docs -p 3000",
+    "preview": "npx serve docs -p 3000",
+    "lint": "npm run lint:js && npm run lint:md",
+    "lint:js": "eslint docs/",
+    "lint:md": "markdownlint **/*.md",
+    "format": "prettier --write .",
+    "test": "echo \"No tests specified - add tests for your project\" && exit 0"
   },
   "repository": {
     "type": "git",
@@ -25,5 +33,11 @@
   "bugs": {
     "url": "https://github.com/coderooz/Docs-Template/issues"
   },
-  "homepage": "https://github.com/coderooz/Docs-Template#readme"
+  "homepage": "https://github.com/coderooz/Docs-Template#readme",
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "markdownlint": "^0.37.0",
+    "serve": "^14.0.0"
+  }
 }

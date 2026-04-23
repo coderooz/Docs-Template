@@ -146,7 +146,7 @@ button {
 
 .layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) 320px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.25fr) 240px minmax(0, 1fr);
   gap: 24px;
   align-items: start;
 }

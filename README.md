@@ -11,6 +11,7 @@ This repository is designed for direct GitHub download today and can later be wi
 - Cross-language command placeholders so one format works across stacks
 - Repository metadata files that are useful for open source or internal teams
 - GitHub issue templates, PR template, labels, and workflows aligned to a docs-focused repository
+- Professional files: CONTRIBUTING.md, CODE_OF_CONDUCT.md, SECURITY.md, SUPPORT.md, LICENSE.md
 
 ## Repository Structure
 
@@ -19,11 +20,24 @@ This repository is designed for direct GitHub download today and can later be wi
 |-- .github/
 |   |-- ISSUE_TEMPLATE/
 |   |-- workflows/
+|   |-- FUNDING.yml
 |   |-- labeler.yml
 |   `-- PULL_REQUEST_TEMPLATE.md
+|-- docs/
+|-- n.md
 |-- CHANGELOG.md
 |-- README.md
-`-- n.md
+|-- CONTRIBUTING.md
+|-- CODE_OF_CONDUCT.md
+|-- SECURITY.md
+|-- SUPPORT.md
+|-- LICENSE.md
+|-- AUTHORS.md
+|-- .editorconfig
+|-- .eslintrc.json
+|-- .prettierrc
+|-- package.json
+`-- .gitignore
 ```
 
 ## How To Use
@@ -33,6 +47,19 @@ This repository is designed for direct GitHub download today and can later be wi
 3. Replace `{{PLACEHOLDER}}` values with project-specific details.
 4. Remove sections that do not apply.
 5. Keep the "External Links" and "Common Workflows" sections updated as the project grows.
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Preview docs locally
+npm start
+
+# Run linters
+npm run lint
+```
 
 ## Template Design Principles
 
@@ -66,25 +93,15 @@ The template is intentionally not tied to one ecosystem. It supports:
 
 Command blocks and workflow sections are written as replaceable examples, not hardcoded assumptions.
 
-## Current Scope
-
-Current distribution model:
-
-- Direct repository download from GitHub
-
-Planned future integration:
-
-- `codebase-context` CLI-driven generation and population
-
 ## GitHub Standards Applied
 
 The `.github/` directory has been normalized for a documentation template repository:
 
 - Issue template configuration is placed under `.github/ISSUE_TEMPLATE/config.yml`
-- Issue templates use structured issue forms
+- Issue templates use structured issue forms with priority and assignee fields
 - PR template uses a clean review checklist
 - Labeler rules match the files that actually exist in this repository
-- Workflows validate Markdown and GitHub Actions files instead of assuming an npm package
+- Workflows validate Markdown, ESLint, and GitHub Actions files
 - Release workflow is tag-based and does not depend on `package.json`
 
 ## Recommended Next Step

@@ -1,9 +1,15 @@
 {
-  "name": "Project Docs Template",
+  "name": "Coderooz Docs Template",
   "short_name": "Docs Template",
   "description": "Reusable project documentation shell for GitHub-hosted static docs.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0d0f14",
-  "theme_color": "#0d0f14"
+  "theme_color": "#0d0f14",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>",
+      "sizes": "any"
+    }
+  ]
 }

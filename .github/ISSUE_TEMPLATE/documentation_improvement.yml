@@ -3,6 +3,10 @@ description: Request a content, clarity, or structure improvement for the docs s
 title: "[Docs]: "
 labels:
   - documentation
+assignees:
+  - 'ranit'
+projects:
+  - '{{ project_board }}'
 body:
   - type: input
     id: section
@@ -24,6 +28,17 @@ body:
     attributes:
       label: Suggested improvement
       description: Describe how the documentation should be improved.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1 - Critical (blocks usage)
+        - P2 - High (major impact)
+        - P3 - Medium (workaround exists)
+        - P4 - Low (nice to have)
     validations:
       required: true
   - type: textarea

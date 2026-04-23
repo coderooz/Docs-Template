@@ -1,0 +1,33 @@
+---
+name: Question
+about: Ask a question or start a discussion
+title: "[Question]: "
+labels:
+  - question
+assignees:
+  - 'ranit'
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What would you like to ask or discuss?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide background information if relevant.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Question type
+      options:
+        - How-to question
+        - Feature discussion
+        - Architecture decision
+        - Project setup
+        - Other
+    validations:
+      required: true

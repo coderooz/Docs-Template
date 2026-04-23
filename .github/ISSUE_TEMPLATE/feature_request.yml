@@ -3,6 +3,10 @@ description: Suggest an improvement to the docs template or repository automatio
 title: "[Feature]: "
 labels:
   - enhancement
+assignees:
+  - 'ranit'
+projects:
+  - '{{ project_board }}'
 body:
   - type: textarea
     id: problem
@@ -25,6 +29,17 @@ body:
     attributes:
       label: Alternatives considered
       description: List any workarounds or other approaches you considered.
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1 - Critical (blocks usage)
+        - P2 - High (major impact)
+        - P3 - Medium (workaround exists)
+        - P4 - Low (nice to have)
+    validations:
+      required: true
   - type: dropdown
     id: scope
     attributes:

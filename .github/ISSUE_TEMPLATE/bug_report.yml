@@ -3,6 +3,10 @@ description: Report a defect in the docs template, repository automation, or usa
 title: "[Bug]: "
 labels:
   - bug
+assignees:
+  - 'ranit'
+projects:
+  - '{{ project_board }}'
 body:
   - type: textarea
     id: summary
@@ -41,7 +45,18 @@ body:
     id: version
     attributes:
       label: Template version
-      placeholder: 0.1.0
+      placeholder: 1.0.0
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1 - Critical (blocks usage)
+        - P2 - High (major impact)
+        - P3 - Medium (workaround exists)
+        - P4 - Low (minor issue)
+    validations:
+      required: true
   - type: textarea
     id: context
     attributes:

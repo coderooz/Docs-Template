@@ -1,22 +1,22 @@
 window.DOCS_TEMPLATE = {
   site: {
-    name: "Project Docs Template",
+    name: "Coderooz Docs Template",
     shortName: "Docs Template",
     label: "Reusable project docs",
     tagline: "Drop this into a repository, change one config object, and the docs site updates everywhere.",
     description:
       "A static, editable documentation shell for products, libraries, services, CLIs, and mixed-language repositories.",
-    owner: "Your Team",
-    version: "0.1.0",
-    lastUpdated: "2026-04-08",
-    repositoryUrl: "https://github.com/your-org/your-project",
+    owner: "Coderooz",
+    version: "1.0.0",
+    lastUpdated: "2026-04-23",
+    repositoryUrl: "https://github.com/coderooz/Docs-Template",
     primaryCta: {
       label: "View Repository",
-      href: "https://github.com/your-org/your-project"
+      href: "https://github.com/coderooz/Docs-Template"
     },
     secondaryCta: {
-      label: "Open Docs Template",
-      href: "#section-overview"
+      label: "Use Template",
+      href: "#section-quickstart"
     },
     stats: [
       { label: "Stack", value: "Polyglot-ready" },
@@ -26,19 +26,20 @@ window.DOCS_TEMPLATE = {
     quickFacts: [
       { label: "Best for", value: "Libraries, apps, services, CLIs" },
       { label: "Works with", value: "JS, TS, Python, Go, Rust, Java, PHP, C#" },
-      { label: "Current mode", value: "Direct repository download" },
-      { label: "Future mode", value: "CLI-generated via codebase-context" }
+      { label: "License", value: "MIT" },
+      { label: "Author", value: "Ranit Saha (Coderooz)" }
     ],
     externalLinks: [
-      { label: "Repository", href: "https://github.com/your-org/your-project" },
-      { label: "Live Docs", href: "https://example.com/docs" },
-      { label: "Issue Tracker", href: "https://github.com/your-org/your-project/issues" },
-      { label: "Discussions", href: "https://github.com/your-org/your-project/discussions" }
+      { label: "Repository", href: "https://github.com/coderooz/Docs-Template" },
+      { label: "Live Demo", href: "https://coderooz.github.io/Docs-Template" },
+      { label: "Issue Tracker", href: "https://github.com/coderooz/Docs-Template/issues" },
+      { label: "Discussions", href: "https://github.com/coderooz/Docs-Template/discussions" }
     ],
     footerLinks: [
       { label: "README", href: "../README.md" },
       { label: "Template File", href: "../n.md" },
-      { label: "Changelog", href: "../CHANGELOG.md" }
+      { label: "Changelog", href: "../CHANGELOG.md" },
+      { label: "Contributing", href: "../CONTRIBUTING.md" }
     ]
   },
   sections: [

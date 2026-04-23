@@ -1,8 +1,11 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Env files (never commit secrets)
+.env
+.env.local
+.env.*.local
 
-# dependencies
+# Package manager
 /node_modules
-/.pnp
+.pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
@@ -10,32 +13,46 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
+# Build outputs
+/dist
+/build
+/.next
+/out
+
+# Coverage
 /coverage
 
-# next.js
-/.next/
-/out/
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# production
-/build
-
-# misc
+# OS
 .DS_Store
-*.pem
+Thumbs.db
 
-# debug
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
+# Vercel
 .vercel
 
-# typescript
+# TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Secrets (do not commit)
+*.pem
+*.key
+credentials.json
+service-account.json
+
+# AI Agent & MCP configs (do not publish)
+*.mcp-runtime.json
+*.project-mcp.json
+global-rules.project-mcp.json
+.mcp-runtime.json

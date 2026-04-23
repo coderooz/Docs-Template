@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: Discussions
-    url: https://github.com/coderooz/codebase-context/discussions
+    url: https://github.com/coderooz/Docs-Template/discussions
     about: Ask questions, share ideas, or discuss documentation strategy.
   - name: Repository README
-    url: https://github.com/coderooz/codebase-context#readme
+    url: https://github.com/coderooz/Docs-Template#readme
     about: Review setup and usage guidance before opening an issue.

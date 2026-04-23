@@ -1,14 +1,22 @@
-documentation:
-  - "*.md"
-  - "**/*.md"
-
 template:
-  - "n.md"
+  - "*.md"
   - "README.md"
   - "CHANGELOG.md"
+  - "CONTRIBUTING.md"
+  - "SECURITY.md"
+  - "LICENSE.md"
+
+documentation:
+  - "docs/**"
 
 github:
   - ".github/**"
 
 automation:
   - ".github/workflows/**"
+
+javascript:
+  - "docs/**/*.js"
+
+css:
+  - "docs/**/*.css"

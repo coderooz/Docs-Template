@@ -4,13 +4,28 @@ All notable changes to this template repository will be documented in this file.
 
 The format is based on Keep a Changelog and this project aims to follow Semantic Versioning for tagged releases.
 
+---
+
+## [1.2.0] - 2026-04-23
+
+### Added
+
+- Added `dependabot.yml` for automated dependency updates (npm + GitHub Actions)
+- Added `auto-tag.yml` workflow to auto-create version tags on package.json changes
+- Added `security.yml` workflow with CodeQL analysis
+- Added `stale.yml` workflow to manage stale issues/PRs
+- Added `delete-branch.yml` workflow to auto-delete merged branches
+- Added `auto-merge.yml` workflow to auto-merge Dependabot PRs
+- Enabled auto-merge for Dependabot in dependabot.yml
+- Added `CODEOWNERS` file
+
 ## [1.1.0] - 2026-04-23
 
 ### Added
 
 - Added `.nvmrc` for Node.js version pinning
 - Added lint and test GitHub Actions workflows
-- Added `CONTRIBUTING.md` with contribution guidelines
+- Added `CONTRIBUTING.md` with contribn guidelines
 - Added `SECURITY.md` with security vulnerability reporting
 - Added `LICENSE.md` with MIT license
 - Added `.editorconfig` for consistent editor settings

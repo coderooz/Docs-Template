@@ -1,0 +1,20 @@
+# Code Owners
+
+# Default owner for everything not matched below
+* @coderooz
+
+# Documentation
+/docs/ @coderooz
+/docs/** @coderooz
+*.md @coderooz
+
+# GitHub configuration
+/.github/ @coderooz
+/.github/** @coderooz
+
+# Build and config files
+package.json @coderooz
+package-lock.json @coderooz
+/.eslintrc* @coderooz
+/.prettierrc* @coderooz
+/.nvmrc @coderooz

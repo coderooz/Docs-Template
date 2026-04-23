@@ -1,6 +1,6 @@
 {
   "name": "coderooz-docs-template",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A documentation starter for projects that need clean, reusable docs without rebuilding the structure every time.",
   "type": "module",
   "main": "docs/index.html",
